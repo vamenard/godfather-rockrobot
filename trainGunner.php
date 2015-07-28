@@ -100,31 +100,7 @@ class trainGunner extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-					/*
-				$qty = 33;
-				if ($_GET['hood'] == 1) {
-					$qty = 41;
-				}
-				if ($_GET['hood'] == 2) {
-					$qty = 62;
-				}
-				if ($_GET['hood'] == 3) {
-					$qty = 75;
-				}
-				if ($_GET['hood'] == 4) {
-					$qty = 79;
-				}
-				if ($_GET['hood'] == 5) {
-					$qty = 65;
-				}
-				if ($_GET['hood'] == 6) {
-					$qty = 67;
-				}
-				if ($_GET['hood'] == 8) {
-					$qty = 75;
-				}
 				
-				*/
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(
                         'gangster' => $this->_wangsta,

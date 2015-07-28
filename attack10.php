@@ -1,5 +1,6 @@
 <?php
-
+// Vincent Menard - thabob@gmail.com
+// Rock Robot
 // base class everything extends
 require('./base.php');
 

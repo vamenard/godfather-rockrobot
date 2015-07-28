@@ -103,21 +103,7 @@ class trainBarbed extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-				/*if ($_GET['hood'] == 1)
-					$qty = 600;
-				if ($_GET['hood'] == 2)
-					$qty = 830;
-				if ($_GET['hood'] == 3)
-					$qty = 912;
-				if ($_GET['hood'] == 4) 
-					$qty = 955;
-				if ($_GET['hood'] == 5)
-					$qty = 988;
-				if ($_GET['hood'] == 6)
-					$qty = 912;
-				if ($_GET['hood'] == 8)
-					$qty = 910;
-					*/
+				
 				$url = "http://realm183.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(
                         'gangster' => $this->_wangsta,

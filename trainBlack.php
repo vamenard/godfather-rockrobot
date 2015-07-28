@@ -100,31 +100,7 @@ class trainBlack extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-					/*
-				$qty = 6;
-				if ($_GET['hood'] == 1) {
-					$qty = 6;
-				}
-				if ($_GET['hood'] == 2) {
-					$qty = 10;
-				}
-				if ($_GET['hood'] == 3) {
-					$qty = 12;
-				}
-				if ($_GET['hood'] == 4) {
-					$qty = 13;
-				}
-				if ($_GET['hood'] == 5) {
-					$qty = 10;
-				}
-				if ($_GET['hood'] == 6) {
-					$qty = 11;
-				}
-				if ($_GET['hood'] == 8) {
-					$qty = 12;
-				}
 				
-				*/
 				
 				
 				$url = "http://realm183.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";

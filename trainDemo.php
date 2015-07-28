@@ -98,27 +98,7 @@ class trainDemo extends Wangsta_Base {
 		$qty = $_GET['qty'];
 				if ($qty < 1 )
 					$qty = 1;
-					/*
-				$qty = 345;
-				if ($_GET['hood'] == 1) {
-					$qty = 345;
-				}
-				if ($_GET['hood'] == 2) {
-					$qty = 450;
-				}
-				if ($_GET['hood'] == 3) {
-					$qty = 690;
-				}
-				if ($_GET['hood'] == 4) {
-					$qty = 611;
-				}
-				if ($_GET['hood'] == 5) {
-					$qty = 514;
-				}
-				if ($_GET['hood'] == 8) {
-					$qty = 542;
-				}
-				*/
+				
 				
 				
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";

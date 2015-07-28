@@ -99,33 +99,6 @@ class trainSniper extends Wangsta_Base {
 		$qty = $_GET['qty'];
 				if ($qty < 1 )
 					$qty = 1;
-					
-					/*
-				$qty = 13;
-				if ($_GET['hood'] == 1) {
-					$qty = 27;
-				}
-				if ($_GET['hood'] == 3) {
-					$qty = 28;
-				}
-				if ($_GET['hood'] == 4) {
-					$qty = 27;
-				}
-				if ($_GET['hood'] == 5) {
-					$qty = 24;
-				}
-				if ($_GET['hood'] == 6) {
-					$qty = 21;
-				}
-				
-				if ($_GET['hood'] == 7) {
-					$qty = 24;
-				}
-				
-				if ($_GET['hood'] == 8) {
-					$qty = 25;
-				}
-				*/
 				
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(

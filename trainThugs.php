@@ -103,31 +103,7 @@ class trainThugs extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-					/*
-			$qty = 475;
-			if ($_GET['hood'] == 1) {
-				$qty = 770;
-			}
-			if ($_GET['hood'] == 2) {
-				$qty = 1040;
-			}
-			if ($_GET['hood'] == 3) {
-				$qty = 1550;
-			}
-			if ($_GET['hood'] == 4) {
-				$qty = 1400;
-			}
-			if ($_GET['hood'] == 5) {
-				$qty = 1220;
-			}
-			if ($_GET['hood'] == 6) {
-				$qty = 1140;
-			}
-			if ($_GET['hood'] == 8) {
-				$qty = 1255;
-			}
 			
-			*/
 			
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(

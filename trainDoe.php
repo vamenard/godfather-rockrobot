@@ -106,24 +106,8 @@ class trainDoe extends Wangsta_Base {
 				//if ($_GET['hood'] == 1) {
 				//	$troop = 'BrassMan';
 				//	$qty = 24;
-				//}
-					/*
-				$qty = 7;
-				if ($_GET['hood'] == 1)
-					$qty = 13;
-				if ($_GET['hood'] == 2)
-					$qty = 11;
-				if ($_GET['hood'] == 3)
-					$qty = 14;
-				if ($_GET['hood'] == 4)
-					$qty = 13;
-				if ($_GET['hood'] == 5)
-					$qty = 13;
-				if ($_GET['hood'] == 6)
-					$qty = 12;
-				if ($_GET['hood'] == 8)
-					$qty = 15;
-				*/
+				//} // we even trail specials :P
+				
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(
                         'gangster' => $this->_wangsta,

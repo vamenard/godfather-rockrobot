@@ -99,32 +99,7 @@ class trainHit extends Wangsta_Base {
 		$qty = $_GET['qty'];
 				if ($qty < 1 )
 					$qty = 1;
-					/*
-				$qty = 110;
-				if ($_GET['hood'] == 1) {
-					$qty = 125;
-				}
-				if ($_GET['hood'] == 2) {
-					$qty = 180;
-				}
-				if ($_GET['hood'] == 3) {
-					$qty = 241;
-				}
-				if ($_GET['hood'] == 4) {
-					$qty = 235;
-				}
-				if ($_GET['hood'] == 5) {
-					$qty = 196;
-				}
 				
-				if ($_GET['hood'] == 6) {
-					$qty = 200;
-				}
-				if ($_GET['hood'] == 8) {
-					$qty = 215;
-				}
-				
-				*/
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(
                         'gangster' => $this->_wangsta,

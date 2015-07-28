@@ -100,36 +100,7 @@ class trainArs extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-			//ars 460
-			//thugs 690
-			/*
-			$qty = 350;
-			if ($_GET['hood'] == 1) {
-				$qty = 500;
-			}
-			if ($_GET['hood'] == 2) {
-				$qty = 770;
-			}
-			if ($_GET['hood'] == 3) {
-				$qty = 900;
-			}
-			if ($_GET['hood'] == 4) {
-				$qty = 950;
-			}
-			if ($_GET['hood'] == 5) {
-				$qty = 794;
-			}
-			if ($_GET['hood'] == 6) {
-				$qty = 460;
-			}
-			if ($_GET['hood'] == 6) {
-				$qty = 800;
-			}
-			if ($_GET['hood'] == 8) {
-				$qty = 895;
-			}
 			
-			*/
 				$url = "http://realm183.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(
                         'gangster' => $this->_wangsta,

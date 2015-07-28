@@ -92,23 +92,7 @@ class trainBooby extends Wangsta_Base {
 				$qty = $_GET['qty'];
 				if ($qty < 1 )
 					$qty = 1;
-					/*
-				$qty = 320;
-				if ($_GET['hood'] == 1)
-					$qty = 380;
-				if ($_GET['hood'] == 2)
-					$qty = 535;
-				if ($_GET['hood'] == 3)
-					$qty = 682;
-				if ($_GET['hood'] == 4) 
-					$qty = 615;
-				if ($_GET['hood'] == 5)
-					$qty = 606;
-				if ($_GET['hood'] == 6)
-					$qty = 590;
-				if ($_GET['hood'] == 8)
-					$qty = 755;
-					*/
+				
 				
 				$url = "http://realm183.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(

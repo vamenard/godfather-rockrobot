@@ -102,21 +102,7 @@ class trainDogs extends Wangsta_Base {
 				if ($qty < 1 )
 					$qty = 1;
 					
-					/*
-			$qty = 225;
-			if ($_GET['hood'] == 1)
-				$qty = 240;
-			if ($_GET['hood'] == 2)
-				$qty = 335;
-			if ($_GET['hood'] == 3)
-				$qty = 428;
-			if ($_GET['hood'] == 4)
-				$qty = 388;
-			if ($_GET['hood'] == 5)
-				$qty = 382;
-			if ($_GET['hood'] == 8)
-				$qty = 470;
-			*/
+			
 				
 				$url = "http://realm184.c2.godfather.rykaiju.com/api/cities/".$this->_city."/units.json";
                 $data = array(

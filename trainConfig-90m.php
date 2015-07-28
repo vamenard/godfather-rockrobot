@@ -9,9 +9,7 @@ function getQtyAttack( $hood, $troop ) {
 			if ($hood == 3) { $qty = 1825; }
 			if ($hood == 4) { $qty = 1400; }
 			if ($hood == 5) { $qty = 2190; }
-			if ($hood == 6) {
-				$qty = 1140;
-			}
+			if ($hood == 6) { $qty = 1140; }
 			if ($hood == 7) { $qty = 2520; }
 			if ($hood == 8) { $qty = 1825; }
 			break;
@@ -19,12 +17,8 @@ function getQtyAttack( $hood, $troop ) {
 			$qty = 350;
 			if ($hood == 1) { $qty = 1780; }
 			if ($hood == 2) { $qty = 1580; }
-			if ($hood == 3) {
-				$qty = 900;
-			}
-			if ($hood == 4) {
-				$qty = 1905;
-			}
+			if ($hood == 3) { $qty = 900;  }
+			if ($hood == 4) { $qty = 1905; }
 			if ($hood == 5) { $qty = 1750; }
 			if ($hood == 6) { $qty = 1645; }
 			if ($hood == 7) { $qty = 1740; }
@@ -34,9 +28,7 @@ function getQtyAttack( $hood, $troop ) {
 		$qty = 345;
 				if ($hood == 1) { $qty = 1280; }
 				if ($hood == 2) { $qty = 940; }
-				if ($hood == 3) {
-					$qty = 690;
-				}
+				if ($hood == 3) { $qty = 690; }
 				if ($hood == 4) { $qty = 1222; }
 				if ($hood == 5) { $qty = 1090; }
 				if ($hood == 6) { $qty = 912; }
