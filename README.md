@@ -5,10 +5,10 @@ by Vincent Menard (thabob@gmail.com)
 The project is fork of initial project from Shawn Crigger
 https://github.com/svizion/Godfather
 
-Godfather is a strategy game made by Kabam and now distributed by Rock You. Usage of bot is tolerated, as long as you do not abuse. Keep in mind that misusage of this program can get your account banned from Kabam, if you set the refresh timer to fast, to the game server can be enormous and you will get noticed, USE IT AT YOUR OWN RISK.
-This version enable options of attacking gangs and MI using multiples hood with fixed time intervals (see attackCtlLvl10.php). It also provide automatic troop training and first neighbourhood automatic reinforcement from all hoods (see trainallCtrl.php).
+Godfather is a strategy game made by Kabam and now distributed by Rock You. Usage of bots is tolerated, as long as you do not abuse. Keep in mind that misusage of this program can get your account banned by Kabam/RockYou, if you set the refresh timer to fast, the requests to game server can be enormous and you will get noticed, USE IT AT YOUR OWN RISK.
+This version enable options of attacking gangs and MI using multiples hoods and fixed time intervals (see attackCtlLvl10.php). It also provide automatic troop training and first neighbourhood automatic reinforcement from all hoods (see trainallCtrl.php).
 
-The project now use web controllers that refresh on timers in order to visits all hood and execute tasks. Those controllers display iframe that open specific tasks. That require that the previously trained troops are written into cache files so that when the controller comes back to the hood, it remembers what troop it started to train 90 minutes and can send them.
+The project now use web controllers that refresh using meta timer in order to visits all hood and execute tasks. Those controllers display iframes that open specific sub-tasks. To move troops around, it is required to remembers the previously trained troops, we write into cache files so that when the controller comes back to the hood, it remembers what troop it started to train 90 minutes and can send them.
 
 [ Configuration ]
 
@@ -21,7 +21,7 @@ The numbers represent the amount of troop you can train for all troop types and 
 
 3. Make sure your FN coords are configured correctly. (RIall.php).
 
-You dont have to configure all troop type for all hood at start, you can choose one troop and fewer hoods, as long as you alter the train ctl properly.
+You dont have to configure all troop types for all hoods at start, you can choose one troop and fewer hoods, as long as you alter the train ctl properly.
 
 - Gang farming
 
@@ -37,7 +37,7 @@ You dont have to configure all troop type for all hood at start, you can choose 
 
 Once you installed xampp or wamp, you can start everything calling the controller file in a browser this way: http://127.0.0.1/trainallCtrl.php?hood=1
 
-You browser window will refresh on fixed intervals (90m / 8 hoods with my setups).
+Your browser window will refresh on fixed intervals (90m / 8 hoods with my setups).
 
 If you are having problems, make sure your apache can execute curl and can write the cache files in the webroot.
 
@@ -45,7 +45,7 @@ If you are having problems, make sure your apache can execute curl and can write
 
 - Note that hood number of chinatown and atlantic are inversed compared to in game interface.
 
-- Same with the troops number BlackWidow / Butcher.
+- Same with the troops number of BlackWidow and Butcher.
 
 - My L10 gang farm controller is actually launching MI 1 attacks (lazy me).
 
