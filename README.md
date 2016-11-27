@@ -1,16 +1,19 @@
 Godfather Rock Robot
 ====================
+-We owe our live to game theories.
 by Vincent Menard (thabob@gmail.com)
 
 The project is fork of initial project from Shawn Crigger
 https://github.com/svizion/Godfather
 
-Godfather is a strategy game made by Kabam and now distributed by Rock You. Usage of bots is tolerated, as long as you do not abuse. Keep in mind that misusage of this program can get your account banned by Kabam/RockYou, if you set the refresh timer to fast, the requests to game server can be enormous and you will get noticed, USE IT AT YOUR OWN RISK.
+Godfather is a strategy game made by Kabam and now distributed by Rock You. Usage of bots is tolerated, as long as you do not abuse.
 This version enable options of attacking gangs and MI using multiples hoods and fixed time intervals (see attackCtlLvl10.php). It also provide automatic troop training and first neighbourhood automatic reinforcement from all hoods (see trainallCtrl.php).
 
 The project now use web controllers that refresh using meta timer in order to visits all hood and execute tasks. Those controllers display iframes that open specific sub-tasks. To move troops around, it is required to remembers the previously trained troops, we write into cache files so that when the controller comes back to the hood, it remembers what troop it started to train 90 minutes and can send them.
 
 [ Configuration ]
+
+First start configuring arrays in config.php
 
 - Troop training
 
@@ -25,13 +28,9 @@ You dont have to configure all troop types for all hoods at start, you can choos
 
 - Gang farming
 
-1. Make sure you configured the troops you wich to send depending on the gang lvl or MI you are using.
+1. Make sure you configured the troops you wich to send depending on the gang lvl or MI you are using in the attack related files.
 
-2. Configure the hoods coords.
-
-3. You must adjust the speed the refresh rate to make sure the troops are back before launching again. My fastest is 22 minutes for 8 hoods. 
-
-4. Configure MI coords are configured (if needed). Gang coords are fetched automatically.
+3. You can adjust the speed the refresh rate to make sure the troops are back before launching again. My fastest is 22 minutes for 8 hoods.
 
 [ Install ]
 

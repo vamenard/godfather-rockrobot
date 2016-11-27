@@ -81,8 +81,8 @@ class Wangsta extends Wangsta_Base {
     function attack()
     {
         $mi = $this->mi;
-        $x = $mi[$_GET['hood']]['x'];
-        $y = $mi[$_GET['hood']]['y'];
+        $x = $mi[1]['x'];
+        $y = $mi[1]['y'];
         if ( ! is_numeric($x) OR ! is_numeric($y) ) return;
         //if ( 0 == $this->_aos_left ) return;
 
