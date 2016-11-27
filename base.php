@@ -10,7 +10,7 @@ require('./misc_helpers.php');
 
 class Wangsta_Base {
 
-        protected $_realm = 184;
+        protected $_realm = 0;
 
         /**
          * @access protected
@@ -91,9 +91,16 @@ class Wangsta_Base {
          * Go forth and cheat!
          * @param string $session Session ID
          */
-        public function __construct( $session = '' )
+        public function __construct( $session = '', $realm_id = 0 )
         {
                 $this->_session = $session;
+                $this->_realm = $realm_id;
+
+                if ($this->_realm == 0)
+                {
+                    die('Realm id is not configured');
+                }
+
                 $this->user_agent = "Mozilla/5.0 (Windows NT 5.1; rv:32.0) Gecko/20100101 Firefox/32.0";
                 if ( ! function_exists( 'curl_init' ) ) die('CURL Extension not compiled with PHP. Research more.');
         }
